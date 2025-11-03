@@ -1,0 +1,28 @@
+{
+  "name": "irvin-contreras-react-test",
+  "version": "1.0.0",
+  "description": "Proyecto React 19 con Module Federation y Tailwind CSS",
+  "private": true,
+  "workspaces": [
+    "host",
+    "remotes/*",
+    "shared/*"
+  ],
+  "scripts": {
+    "install-all": "npm install && cd host && npm install && cd ../remotes/rick-morty && npm install && cd ../products && npm install && cd ../upload && npm install",
+    "start": "concurrently \"npm run start:host\" \"npm run start:rick-morty\" \"npm run start:products\" \"npm run start:upload\"",
+    "start:host": "cd host && npm start",
+    "start:rick-morty": "cd remotes/rick-morty && npm start",
+    "start:products": "cd remotes/products && npm start",
+    "start:upload": "cd remotes/upload && npm start",
+    "build": "npm run build:rick-morty && npm run build:products && npm run build:upload && npm run build:host",
+    "build:host": "cd host && npm run build",
+    "build:rick-morty": "cd remotes/rick-morty && npm run build",
+    "build:products": "cd remotes/products && npm run build",
+    "build:upload": "cd remotes/upload && npm run build"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "concurrently": "^8.2.2"
+  }
+}

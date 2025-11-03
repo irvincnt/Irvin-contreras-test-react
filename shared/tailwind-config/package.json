@@ -1,0 +1,7 @@
+{
+  "name": "@shared/tailwind-config",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "description": "Configuración compartida de Tailwind para Module Federation"
+}
+
