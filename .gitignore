@@ -33,3 +33,12 @@ package-lock.json
 yarn.lock
 pnpm-lock.yaml
 
+.env
+.env.production
+
+remotes/rick-morty/.env
+remotes/rick-morty/.env.production
+remotes/products/.env
+remotes/products/.env.production
+remotes/upload/.env
+remotes/upload/.env.production
