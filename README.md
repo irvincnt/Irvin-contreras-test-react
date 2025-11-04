@@ -37,8 +37,15 @@ El proyecto está estructurado como un monorepo con las siguientes aplicaciones:
 
 ### Requisitos Previos
 
-- Node.js (v18 o superior)
+- Node.js (v22 o superior)
 - npm
+
+### Pasos rápidos tras clonar el repositorio
+
+1. Clona el proyecto o descárgalo en tu máquina.
+2. Ejecuta `npm run install-all` desde la raíz para instalar todas las dependencias.
+3. Crea los archivos `.env` necesarios (ver sección "Puesta en marcha").
+4. Inicia las aplicaciones con `npm start` o con los scripts individuales.
 
 ### Instalación de Dependencias
 
@@ -61,13 +68,6 @@ cd remotes/rick-morty && npm install && cd ../..
 cd remotes/products && npm install && cd ../..
 cd remotes/upload && npm install && cd ../..
 ```
-
-### Pasos rápidos tras clonar el repositorio
-
-1. Clona el proyecto o descárgalo en tu máquina.
-2. Ejecuta `npm run install-all` desde la raíz para instalar todas las dependencias.
-3. Crea los archivos `.env` necesarios (ver sección "Puesta en marcha").
-4. Inicia las aplicaciones con `npm start` o con los scripts individuales.
 
 ## 🎮 Uso
 
